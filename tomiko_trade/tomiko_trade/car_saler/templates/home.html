@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header class="background-image">
+        <img src="{% static 'images/design_photo/imgBG - 1.png' %}" alt="Фоновое изображение">
+    </header>
+    <div class="container">
+        <button class="image-button">
+            <img src="{% static 'images/design_photo/logo.png' %}" alt="Логотип" />
+        </button>
+        <div class="text-buttons">
+            <span class="text-button">Авто из Кореи</span>
+            <span class="text-button">Авто из Китая</span>
+            <span class="text-button">Авто из Японии</span>
+            <span class="text-button">Контакты</span>
+        </div>
+        <div class="phone-number">
+            <span>8 (800) 500-49-46</span>
+        </div>
+        <div class="social-buttons">
+            <button class="image-button-social-networks telegram-button">
+                <img src="{% static 'images/design_photo/tg_button.png' %}" alt="Telegram" />
+            </button>
+            <button class="image-button-social-networks whatsapp-button">
+                <img src="{% static 'images/design_photo/wa_button.png' %}" alt="WhatsApp" />
+            </button>
+        </div>
+       <div class="slogan">
+            <h1>АВТОМОБИЛЬ ВАШЕЙ МЕЧТЫ ЗДЕСЬ</h1>
+            <p>Прозрачное ценообразование с подробным<br>разъяснением затрат на каждом этапе</p>
+            <button class="calculate-button">Рассчитать стоимость</button>
+        </div>
+    </div>
+</body>
+</html>
